@@ -13,7 +13,7 @@ namespace ApiRepasoExamenCubos.Repositories
         }
 
         public async Task<List<Cubo>> GetCubosAsync() {
-            return this.context.Cubos.ToList();
+            return await this.context.Cubos.ToListAsync();
         }
 
         public async Task<List<string>> GetMarcasAsync() {
